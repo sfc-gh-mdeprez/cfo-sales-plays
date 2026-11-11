@@ -1,0 +1,371 @@
+<!DOCTYPE html><html lang="en"><head><meta name="robots" content="noindex,nofollow"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A Day in the Life of AZ GFS Finance &middot; 18:00 &mdash; what changed today</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"><style>
+:root{--blue:#29B5E8;--mid:#11567F;--star:#75CDD7;--orange:#FF9F36;--purple:#7254A3;--green:#3BB27F;--red:#E5484D;
+--bg:#0B1E33;--bg2:#0F2740;--panel:#132F4C;--panel2:#183856;--line:rgba(117,205,215,.16);--ink:#EAF4FA;--soft:#A9C3D6;--mute:#6F8EA6}
+body.light{--bg:#F4F6F9;--bg2:#EEF2F6;--panel:#FFFFFF;--panel2:#F7F9FB;--line:#E3E8EE;--ink:#0F2A44;--soft:#4A5E72;--mute:#8696A7}
+body.light .p,body.light .kpi,body.light .lane{box-shadow:0 1px 3px rgba(15,42,68,.06),0 6px 18px rgba(15,42,68,.05)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;background:#050d1a;font-family:Inter,system-ui,-apple-system,sans-serif;color:var(--ink)}
+#cv{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0;overflow:hidden;background:var(--bg);display:flex;flex-direction:row;font-size:17px;line-height:1.45}
+.content{flex:1;display:flex;flex-direction:column;min-width:0;position:relative}
+.top{height:76px;flex:0 0 76px;display:flex;align-items:center;gap:22px;padding:0 34px;background:linear-gradient(90deg,#071526,var(--bg2));border-bottom:1px solid var(--line)}
+body.light .top{background:linear-gradient(90deg,#fff,var(--bg2))}
+.brand{white-space:nowrap;flex:0 0 auto;display:flex;align-items:center;gap:12px;font-weight:800;font-size:20px;letter-spacing:.01em}
+.brand svg{width:30px;height:30px}
+.brand small{display:block;font-weight:600;font-size:13px;color:var(--star);letter-spacing:.12em;text-transform:uppercase}
+.when{margin-left:14px;padding:6px 14px;border-radius:999px;background:rgba(41,181,232,.14);border:1px solid rgba(41,181,232,.35);font-weight:700;font-size:16px}
+.who{font-size:16px;color:var(--soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;flex:1}.who b{color:var(--ink)}
+.sp{flex:0}.tbtn,.synth,.when{flex:0 0 auto;white-space:nowrap}
+.tbtn{font:600 14px Inter,system-ui,sans-serif;color:var(--soft);background:transparent;border:1px solid var(--line);border-radius:8px;padding:8px 14px;cursor:pointer;text-decoration:none}
+.tbtn:hover{border-color:var(--blue);color:var(--ink)}
+.synth{font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);border:1px solid rgba(255,159,54,.5);border-radius:999px;padding:5px 12px}
+.main{flex:1;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:minmax(0,1fr);grid-auto-rows:auto;gap:20px;padding:22px 34px 16px;min-height:0}
+.foot{height:64px;flex:0 0 64px;display:flex;align-items:center;gap:10px;padding:0 34px;border-top:1px solid var(--line);background:var(--bg2);font-size:14px;color:var(--soft)}
+.foot b{color:var(--ink);font-weight:700;margin-right:4px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:999px;background:var(--panel);border:1px solid var(--line);font-weight:600;font-size:14px;color:var(--ink);white-space:nowrap}
+.ga{font-size:11px;font-weight:800;letter-spacing:.06em;padding:1px 6px;border-radius:4px;background:rgba(59,178,127,.18);color:var(--green)}
+.honest{margin-left:auto;font-weight:700;color:var(--orange);white-space:nowrap}
+.p{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;min-height:0;overflow:hidden;display:flex;flex-direction:column;animation:fade .5s ease both}
+.p h3{font-size:14px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--star);margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.p h3 .r{margin-left:auto;font-size:13px;letter-spacing:.02em;text-transform:none;font-weight:600;color:var(--mute)}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.c1{grid-column:span 1}.c2{grid-column:span 2}.c3{grid-column:span 3}.c4{grid-column:span 4}.c5{grid-column:span 5}.c6{grid-column:span 6}.c7{grid-column:span 7}.c8{grid-column:span 8}.c9{grid-column:span 9}.c12{grid-column:span 12}
+.col{display:flex;flex-direction:column;gap:20px;min-height:0}
+.kpis{display:grid;gap:16px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 18px;position:relative;overflow:hidden;animation:fade .5s ease both}
+.kpi i{padding-right:96px;display:block;font-style:normal;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.kpi b{display:block;font-size:34px;font-weight:800;letter-spacing:-.02em;margin-top:2px}
+.kpi s{text-decoration:none;font-size:14px;color:var(--soft)}
+.kpi .tag{position:absolute;top:12px;right:14px;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--orange)}
+.kpi .tag.wyt{color:#E07AB7}
+.kpi svg.spark{position:absolute;right:14px;bottom:12px;width:120px;height:34px}
+.sev{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:999px}
+.sev.h{background:rgba(255,159,54,.2);color:var(--orange)}.sev.m{background:rgba(41,181,232,.18);color:var(--blue)}.sev.l{background:rgba(117,205,215,.12);color:var(--star)}
+.sev.ok{background:rgba(59,178,127,.18);color:var(--green)}
+table.t{width:100%;border-collapse:collapse;font-size:16px}
+table.t th{text-align:left;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);padding:7px 8px;border-bottom:1px solid var(--line)}
+table.t td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+table.t tr.sel td{background:rgba(41,181,232,.08)}
+table.t tr{cursor:default}
+.btn{font:700 15px Inter,system-ui,sans-serif;padding:9px 16px;border-radius:9px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);cursor:pointer;transition:filter .15s,transform .1s}
+.btn:hover{filter:brightness(1.15);transform:translateY(-1px)}
+.btn.pri{background:var(--blue);border-color:var(--blue);color:#04121F}
+.btn.ai{background:rgba(114,84,163,.25);border-color:rgba(114,84,163,.6)}
+.btn.sm{font-size:13px;padding:5px 10px}
+.done{color:var(--green);font-weight:700}
+.ai-l{color:#B79CF0}
+.lineage{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--soft);flex-wrap:wrap}
+.lineage span{padding:6px 12px;border-radius:8px;background:var(--panel2);border:1px solid var(--line);color:var(--ink);font-weight:600}
+.lineage span.sv{border-color:rgba(41,181,232,.6)}.lineage span.ag{border-color:rgba(114,84,163,.7)}
+.lineage em{font-style:normal;color:var(--blue);font-weight:800}
+.gov{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:var(--star);background:rgba(117,205,215,.08);border:1px solid rgba(117,205,215,.3);border-radius:8px;padding:5px 11px}
+.gov svg{width:16px;height:16px}
+.steps{display:flex;flex-direction:column;gap:9px}
+.step{display:flex;gap:12px;align-items:flex-start;padding:10px 12px;border-radius:10px;background:var(--panel2);border:1px solid var(--line);opacity:0;transform:translateY(4px);transition:all .35s ease;font-size:16px}
+.step.on{opacity:1;transform:none}
+.step .k{flex:0 0 auto;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:6px;background:rgba(114,84,163,.3);color:#D6C7F7}
+.step .k.an{background:rgba(41,181,232,.22);color:#9FDCF3}.step .k.se{background:rgba(117,205,215,.2);color:var(--star)}.step .k.ml{background:rgba(59,178,127,.2);color:#8FE0B9}
+.step code,.sql{font-family:ui-monospace,Menlo,monospace;font-size:14px;color:var(--soft)}
+.sql{display:none;white-space:pre;background:#071526;border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-top:8px;color:#BFE6F6}
+body.light .sql{background:#0B1E33}
+.sql.open{display:block}
+.shimmer{height:10px;border-radius:6px;background:linear-gradient(90deg,var(--panel2) 0%,rgba(41,181,232,.35) 50%,var(--panel2) 100%);background-size:200% 100%;animation:sh 1.2s linear infinite}
+@keyframes sh{from{background-position:200% 0}to{background-position:-200% 0}}
+.draft{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#7a5200;background:#FFD89A;border-radius:5px;padding:2px 8px}
+.cite{font-size:14px;color:var(--soft);border-left:3px solid var(--star);padding:4px 10px;margin-top:6px}
+.sod{display:flex;align-items:center;gap:10px;font-size:15px;flex-wrap:wrap}
+.sod .who2{padding:4px 10px;border-radius:8px;background:var(--panel2);border:1px solid var(--line)}
+.sod .ok{color:var(--green);font-weight:800}
+.note{font-size:14px;color:var(--mute)}
+.mask{font-family:ui-monospace,Menlo,monospace;letter-spacing:.08em;color:var(--mute)}
+input[type=range]{width:100%;accent-color:#29B5E8;height:22px;cursor:pointer}
+
+.side{flex:0 0 250px;background:#0F2A44;color:#fff;display:flex;flex-direction:column;padding:18px 0 14px;gap:4px}
+.side .sb{display:flex;align-items:center;gap:10px;padding:0 18px 14px;font-weight:800;font-size:17px;line-height:1.2}
+.side .sb svg{width:26px;height:26px;flex:0 0 26px}.side .sb small{display:block;font-weight:600;font-size:12px;color:#9FB6CB}
+.side .lbl{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#7F98AF;padding:12px 18px 6px}
+.side .pers{margin:0 14px;padding:10px 12px;border-radius:9px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);font-size:14px;font-weight:700;display:flex;justify-content:space-between;align-items:center}
+.side .pers span{display:block;font-weight:500;font-size:12px;color:#9FB6CB}
+.side a.mi{display:flex;align-items:center;gap:10px;padding:9px 18px;color:#C9D7E4;text-decoration:none;font-size:14.5px;border-left:3px solid transparent;line-height:1.25}
+.side a.mi:hover{background:rgba(255,255,255,.05);color:#fff}
+.side a.mi.on{background:rgba(41,181,232,.16);border-left-color:#29B5E8;color:#fff;font-weight:700}
+.side a.mi i{font-style:normal;font-size:12px;font-weight:700;color:#7F98AF;flex:0 0 40px}
+.side a.mi b{font-weight:inherit;flex:1}
+.side a.mi em{font-style:normal;font-size:10px;font-weight:800;padding:1px 6px;border-radius:5px;background:rgba(114,84,163,.45);color:#E6DCFA}
+.side .sfoot{margin-top:auto;padding:10px 18px 0;font-size:12px;color:#7F98AF;border-top:1px solid rgba(255,255,255,.08)}
+.hdr{margin:16px 24px 0;height:88px;flex:0 0 88px;border-radius:14px;background:linear-gradient(90deg,#0F2A44,#1D4266);display:flex;align-items:center;gap:16px;padding:0 22px;color:#fff;box-shadow:0 6px 18px rgba(15,42,68,.18)}
+.hdr .tt{flex:1;min-width:0}.hdr .tt b{display:flex;align-items:center;gap:12px;font-size:24px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hdr .tt b .bd{font-size:12px;font-weight:800;padding:3px 10px;border-radius:999px;background:rgba(41,181,232,.25);color:#BFE9F9;border:1px solid rgba(41,181,232,.5)}
+.hdr .tt span{display:block;font-size:14px;color:#B8CADB;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hdr .tbtn{color:#DCE8F2;border-color:rgba(255,255,255,.25)}.hdr .tbtn:hover{color:#fff;border-color:#29B5E8}
+.hdr .synth{color:#FFC27A;border-color:rgba(255,194,122,.55)}
+.hdr .azl{background:#fff;border-radius:9px;padding:8px 14px;display:flex;align-items:center}.hdr .azl svg{height:24px;width:auto;display:block}
+.p h3{font-size:17px;font-weight:800;letter-spacing:0;text-transform:none;color:var(--ink)}
+.p h3 .r{font-weight:500;color:var(--mute)}
+body.light .p h3{color:#0F2A44}
+.main{padding:16px 24px 14px}
+.foot{padding:0 24px}
+body.embed .hdr .nav,body.embed #pbtn{display:none}
+#drawer{top:0}
+
+/* light-theme contrast fixes */
+body.light .ai-l{color:#5B3F96}
+body.light .step .k{background:rgba(114,84,163,.15);color:#5B3F96}
+body.light .step .k.an{background:rgba(41,181,232,.15);color:#0E5C85}
+body.light .step .k.se{background:rgba(17,86,127,.1);color:#11567F}
+body.light .step .k.ml{background:rgba(59,178,127,.15);color:#1E7A52}
+body.light .p h3,body.light .io i{color:#11567F}
+body.light .gov{color:#11567F;background:rgba(17,86,127,.06);border-color:rgba(17,86,127,.25)}
+body.light .sev.l{color:#11567F;background:rgba(17,86,127,.1)}
+body.light .kpi .tag,body.light .synth{color:#C46A00}body.light .synth{border-color:rgba(196,106,0,.5)}
+body.light .honest{color:#C46A00}
+body.light .kpi .tag.wyt{color:#A3246F}
+body.light .cite{border-left-color:#29B5E8}
+body.light .h3{background:rgba(17,86,127,.08)}
+body.light .lineage span.ag{border-color:#7254A3}
+body.light .shimmer{background:linear-gradient(90deg,#E9F0F5 0%,rgba(41,181,232,.35) 50%,#E9F0F5 100%);background-size:200% 100%}
+/* demo tour cursor */
+#cur{position:absolute;left:960px;top:1200px;width:34px;height:34px;z-index:60;pointer-events:none;transition:left .8s cubic-bezier(.4,0,.2,1),top .8s cubic-bezier(.4,0,.2,1);filter:drop-shadow(0 3px 6px rgba(0,0,0,.35))}
+#cur .rp{position:absolute;left:-14px;top:-14px;width:36px;height:36px;border-radius:50%;border:3px solid #29B5E8;opacity:0}
+#cur.clk .rp{animation:rp .5s ease-out}
+@keyframes rp{0%{opacity:.9;transform:scale(.3)}100%{opacity:0;transform:scale(1.6)}}
+.tourhl{outline:3px solid rgba(41,181,232,.7)!important;outline-offset:3px;border-radius:8px;transition:outline .2s}
+#cap{position:absolute;left:50%;bottom:84px;transform:translateX(-50%);z-index:59;background:rgba(11,30,51,.92);color:#fff;font-size:19px;font-weight:600;padding:10px 22px;border-radius:999px;opacity:0;transition:opacity .3s;pointer-events:none;white-space:nowrap}
+#cap.on{opacity:1}
+/* presenter drawer */
+#drawer{position:absolute;top:76px;right:0;bottom:64px;width:560px;background:#06111F;border-left:2px solid var(--blue);padding:24px 26px;overflow:auto;transform:translateX(100%);transition:transform .3s;z-index:50;color:#EAF4FA;font-size:16px}
+body.presenter #drawer{transform:none}
+#drawer h4{font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin:16px 0 6px}
+#drawer h4:first-child{margin-top:0}
+#drawer p,#drawer li{color:#C9DCE8;line-height:1.55}
+#drawer ul{padding-left:18px}
+#drawer a{color:#9FDCF3}
+/* embed */
+body.embed .top .nav,body.embed #pbtn{display:none}
+
+
+.hub{flex:1;display:flex;flex-direction:column;padding:30px 40px 20px;gap:24px}
+.hub h1{font-size:54px;font-weight:800;letter-spacing:-.02em}.hub h1 span{color:var(--blue)}
+.hub .sub{font-size:21px;color:var(--soft);max-width:1300px}
+.line{display:grid;grid-template-columns:repeat(7,1fr);gap:12px;position:relative;margin-top:10px}
+.line::before{content:"";position:absolute;left:0;right:0;top:46px;height:3px;background:linear-gradient(90deg,#11567F,#29B5E8,#7254A3)}
+.mo{position:relative;display:flex;flex-direction:column;gap:8px;padding:0 4px;text-decoration:none;color:var(--ink);animation:fade .5s both}
+.mo .t{font-size:26px;font-weight:800}.mo .dot{width:20px;height:20px;border-radius:50%;background:var(--bg);border:4px solid var(--blue);margin:2px 0 8px}
+.mo b{font-size:20px;line-height:1.25}.mo .pp{font-size:15px;color:var(--soft)}.mo .cp{display:flex;flex-wrap:wrap;gap:5px}.mo .cp i{font-style:normal;font-size:12px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--star)}
+.mo .id{font-size:14px;font-weight:800;color:var(--blue);margin-top:4px}
+.mo:hover b{color:var(--blue)}.mo:hover .dot{background:var(--blue)}
+.banner{margin-top:auto;display:flex;align-items:center;gap:30px;padding:26px 32px;border-radius:16px;background:linear-gradient(90deg,rgba(17,86,127,.55),rgba(114,84,163,.35));border:1px solid rgba(41,181,232,.4)}
+.banner .big{font-size:34px;font-weight:800}.banner .big small{display:block;font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#E07AB7;margin-top:6px}
+body.light .banner{background:linear-gradient(90deg,rgba(41,181,232,.14),rgba(114,84,163,.12))}body.light .banner .big small{color:#A3246F}
+.cta{margin-left:auto;padding:16px 24px;border-radius:12px;background:var(--blue);color:#04121F;font-weight:800;font-size:19px;max-width:520px}</style></head><body>
+<div id="cv">
+ <nav class="side"><div class="sb"><svg viewBox="0 0 146.36 139.16"><path fill="#29B5E8" d="M134.81,60.1l-16.47,9.49L134.81,79a8.65,8.65,0,1,1-8.67,15l-29.51-17a8.68,8.68,0,0,1-4.33-7.75,8.48,8.48,0,0,1,.31-2,8.68,8.68,0,0,1,4-5.19l29.51-16.94A8.69,8.69,0,0,1,138,48.31,8.58,8.58,0,0,1,134.81,60.1Zm-15.59,46L89.72,89.13a8.72,8.72,0,0,0-13.06,7.48v33.9a8.69,8.69,0,0,0,17.37,0v-19L110.54,121a8.66,8.66,0,1,0,8.68-15Zm-34-33.16L72.92,85.09a2.44,2.44,0,0,1-1.54.65H67.77a2.51,2.51,0,0,1-1.54-.65L54,72.9a2.45,2.45,0,0,1-.64-1.52v-3.6A2.5,2.5,0,0,1,54,66.25L66.23,54.06a2.5,2.5,0,0,1,1.54-.64h3.61a2.45,2.45,0,0,1,1.54.64L85.18,66.25a2.49,2.49,0,0,1,.63,1.53v3.6A2.44,2.44,0,0,1,85.18,72.9ZM19.93,33.08,49.44,50a8.73,8.73,0,0,0,13.07-7.49V8.64a8.69,8.69,0,0,0-17.37,0v19l-16.53-9.5a8.65,8.65,0,1,0-8.68,15ZM84.69,51.16a8.64,8.64,0,0,0,5-1.13l29.5-17a8.65,8.65,0,1,0-8.68-15L94,27.61v-19a8.69,8.69,0,0,0-17.37,0v33.9A8.66,8.66,0,0,0,84.69,51.16ZM54.48,88a8.58,8.58,0,0,0-5,1.13L19.93,106.06a8.66,8.66,0,1,0,8.68,15l16.53-9.49v19a8.69,8.69,0,0,0,17.37,0V96.61A8.65,8.65,0,0,0,54.48,88Zm-8-15.87a8.61,8.61,0,0,0-4-10L13,45.14A8.69,8.69,0,0,0,1.17,48.31,8.59,8.59,0,0,0,4.35,60.1l16.47,9.49L4.35,79A8.65,8.65,0,1,0,13,94l29.48-17A8.59,8.59,0,0,0,46.47,72.13Z"/></svg><div>AZ GFS &middot; Finance Hub<small>built on Snowflake</small></div></div>
+ <div class="lbl">Persona</div><div class="pers"><div>GFS Finance Leadership<span>Mani &middot; Hammond &middot; David &middot; Russell &middot; Rajesh</span></div><span>&#9662;</span></div>
+ <div class="lbl">A day in GFS</div><a class="mi" href="dil-01-close-control-tower.html"><i>07:30</i><b>Close Control Tower</b><em>AI</em></a><a class="mi" href="dil-02-variance-talk-to-data.html"><i>08:15</i><b>Variance &amp; talk to data</b><em>AI</em></a><a class="mi" href="dil-03-vat-duplicate-check.html"><i>09:30</i><b>100% VAT &amp; duplicates</b><em>AI</em></a><a class="mi" href="dil-04-recon-on-blackline.html"><i>11:00</i><b>Recon on BlackLine</b><em>AI</em></a><a class="mi" href="dil-07-costing-scenario-twin.html"><i>12:15</i><b>Costing scenario twin</b><em>AI</em></a><a class="mi" href="dil-05-journal-agent-inbox.html"><i>13:30</i><b>Journal agent inbox</b><em>AI</em></a><a class="mi" href="dil-06-o2c-linked-agents.html"><i>15:00</i><b>O2C linked agents</b><em>AI</em></a><a class="mi on" href="index.html"><i>18:00</i><b>What changed today</b></a>
+ <div class="sfoot">on AZ Finance Data Hub &middot; synthetic data</div></nav>
+<div class="content">
+ <div class="hdr"><div class="tt"><b>AstraZeneca &mdash; A day in GFS<span class="bd">18:00</span></b><span>What changed today &middot; once Waves 0&ndash;2 are real &middot; on AZ Finance Data Hub</span></div><span class="synth">Synthetic data</span><button class="tbtn" id="tbtn">&#9680; Theme</button><span class="azl"><svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="-0.835 -0.509 188 48" enable-background="new -0.835 -0.509 188 48"
+	 xml:space="preserve">
+<defs>
+</defs>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#8A0051" d="M5.96,37.199l3.081-8.366l2.939,8.366H5.96L5.96,37.199z
+	 M14.974,45.63h2.825l-7.332-20.139H7.673L0,45.63h2.852l2.253-6.172h7.673L14.974,45.63L14.974,45.63z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#8A0051" d="M23.941,38.675c-2.618-0.566-5.322-1.184-5.322-4.342
+	c0-2.773,2.345-4.521,5.887-4.521c2.291,0,4.479,0.853,5.571,2.938l-2.382,0.994c-0.191-0.557-1.424-1.959-3.481-1.959
+	c-2.016,0-3.025,1.193-3.025,2.226c0,1.45,1.917,2.054,3.552,2.383c3.385,0.681,6.328,1.547,6.328,4.738
+	c0,2.48-2.203,4.81-6.411,4.81c-3.098,0-5.299-1.036-6.358-3.201l2.717-0.474c0.682,1.186,1.915,1.7,3.752,1.7
+	c2.278,0,3.61-0.869,3.61-2.514C28.38,39.713,26.194,39.162,23.941,38.675L23.941,38.675z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#8A0051" d="M36.711,30.276h2.782v2.141h-2.782v8.712
+	c0,1.807,0,2.582,1.099,2.582c0.485,0,1.166-0.195,1.683-0.355v2.12c-0.453,0.064-1.522,0.258-2.493,0.258
+	c-2.975,0-2.975-1.446-2.943-3.442v-9.875H31.63v-2.141h2.427v-3.658l2.654-1.104V30.276L36.711,30.276z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#8A0051" d="M44.381,30.315v2.742c1.455-2.893,4.206-2.958,5.241-2.99v2.653
+	c-2.523,0.017-3.76,0.534-4.593,1.891c-0.684,1.108-0.648,2.665-0.648,3.98v7.039h-2.569V30.315H44.381L44.381,30.315z"/>
+<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#8A0051" points="79.327,25.494 79.327,28.006 67.929,43.214 79.613,43.214 
+	79.613,45.63 64.818,45.63 64.818,43.014 76.272,27.977 64.827,27.977 64.827,25.494 79.327,25.494 "/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#8A0051" d="M98.289,30.421v2.225c1.43-2.5,3.866-2.727,4.775-2.727
+	c1.949,0,4.284,0.975,5.029,3.502c0.261,0.904,0.261,1.841,0.261,3.134v9.075h-2.562v-8.655c0-1.552,0-2.003-0.163-2.521
+	c-0.454-1.453-1.883-2.099-3.28-2.099c-1.136,0-2.111,0.355-2.924,1.162c-1.137,1.131-1.137,2.292-1.137,3.426v8.687h-2.57V30.421
+	H98.289L98.289,30.421z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#8A0051" d="M137.907,42.919c-0.959,1.506-2.701,3.022-5.837,3.022
+	c-5.412,0-7.456-4.171-7.456-7.918c0-4.329,2.355-8.252,7.23-8.252c1.912,0,4.59,0.576,6.072,3.045l-2.408,1.005
+	c-0.455-1.003-1.435-2.162-3.567-2.162c-4.224,0-4.471,4.813-4.471,6.171c0,5.046,2.899,6.137,4.631,6.137
+	c1.983,0,2.996-0.951,3.531-1.999L137.907,42.919L137.907,42.919z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#8A0051" d="M83.305,36.405h8.121c-0.227-4.006-2.536-4.683-4.076-4.683
+	C85.152,31.723,83.595,33.336,83.305,36.405L83.305,36.405z M93.54,42.721c-0.876,1.491-2.567,3.202-5.901,3.202
+	c-4.52,0-7.12-3.072-7.12-8.222c0-5.753,3.795-7.952,7.025-7.952c2.808,0,5.5,1.552,6.405,5.396
+	c0.292,1.293,0.292,2.459,0.292,3.106h-11c-0.064,2.558,1.008,5.795,4.625,5.732c1.476-0.025,2.515-0.695,3.178-1.745L93.54,42.721
+	L93.54,42.721z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#8A0051" d="M112.518,36.405h8.122c-0.226-4.006-2.535-4.683-4.076-4.683
+	C114.368,31.723,112.81,33.336,112.518,36.405L112.518,36.405z M122.755,42.721c-0.876,1.491-2.566,3.202-5.9,3.202
+	c-4.52,0-7.121-3.072-7.121-8.222c0-5.753,3.795-7.952,7.024-7.952c2.809,0,5.499,1.552,6.405,5.396
+	c0.291,1.293,0.291,2.459,0.291,3.106h-11c-0.065,2.558,1.011,5.795,4.625,5.732c1.476-0.025,2.518-0.695,3.179-1.745
+	L122.755,42.721L122.755,42.721z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#8A0051" d="M151.951,45.646l-2.672,0.01c0,0-0.231-1.079-0.306-2.257
+	c-0.776,0.806-2.216,2.473-5.126,2.473c-2.976,0-5.184-1.765-5.184-4.351c0-0.811,0.227-1.618,0.681-2.3
+	c0.877-1.295,2.5-2.331,7.059-2.686l2.423-0.194v-0.389c0-1.586,0-4.239-3.416-4.239c-2.149,0-2.881,1.042-3.129,1.983l-2.366-0.988
+	c0.037-0.082,0.08-0.166,0.125-0.251c0.909-1.682,2.692-2.718,5.271-2.718c1.42,0,3.258,0.357,4.456,1.295
+	c1.705,1.292,1.664,3.837,1.664,3.837l0.103,7.854C151.534,42.727,151.625,45.007,151.951,45.646L151.951,45.646z M148.438,41.424
+	c0.388-0.841,0.421-1.197,0.421-3.433c-1,0.162-2.353,0.356-4.009,0.713c-2.846,0.614-3.331,1.686-3.331,2.753
+	c0,1.23,0.971,2.267,2.878,2.267C146.177,43.724,147.696,43.012,148.438,41.424L148.438,41.424z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#8A0051" d="M63.004,45.646l-2.672,0.01c0,0-0.232-1.079-0.306-2.257
+	c-0.776,0.806-2.214,2.473-5.125,2.473c-2.978,0-5.185-1.765-5.185-4.351c0-0.811,0.227-1.618,0.682-2.3
+	c0.877-1.295,2.499-2.331,7.056-2.686l2.426-0.194v-0.389c0-1.586,0-4.239-3.418-4.239c-2.149,0-2.879,1.042-3.129,1.983
+	l-2.366-0.988c0.039-0.082,0.08-0.166,0.126-0.251c0.909-1.682,2.693-2.718,5.27-2.718c1.419,0,3.259,0.357,4.456,1.295
+	c1.705,1.292,1.664,3.837,1.664,3.837l0.103,7.854C62.586,42.727,62.677,45.007,63.004,45.646L63.004,45.646z M59.491,41.424
+	c0.39-0.841,0.42-1.197,0.42-3.433c-0.998,0.162-2.353,0.356-4.007,0.713c-2.844,0.614-3.33,1.686-3.33,2.753
+	c0,1.23,0.969,2.267,2.876,2.267C57.229,43.724,58.748,43.012,59.491,41.424L59.491,41.424z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#EFAB00" d="M187.068,24.432c-0.01-0.094-0.021-0.188-0.044-0.279
+	c-0.048-0.186-0.099-0.372-0.17-0.55c-0.077-0.189-0.172-0.372-0.273-0.549c-0.113-0.195-0.239-0.382-0.372-0.565
+	c-0.077-0.107-0.166-0.207-0.258-0.302c-0.103-0.106-0.209-0.211-0.325-0.303c-0.262-0.208-0.522-0.42-0.808-0.595
+	c-0.624-0.383-1.246-0.781-1.916-1.076c-0.81-0.356-1.593-0.778-2.428-1.068l-5.627-1.954c0-1.07,0.031-2.14,0-3.209
+	c-0.047-1.587-0.111-3.175-0.234-4.758c-0.086-1.102-0.218-2.201-0.39-3.293c-0.134-0.852-0.337-1.692-0.526-2.533
+	c-0.043-0.193-0.108-0.38-0.172-0.566c-0.057-0.168-0.119-0.335-0.188-0.499c-0.062-0.148-0.13-0.294-0.203-0.438
+	c-0.066-0.129-0.139-0.255-0.216-0.378c-0.069-0.111-0.146-0.219-0.225-0.324c-0.072-0.095-0.148-0.186-0.229-0.273
+	c-0.073-0.08-0.151-0.156-0.232-0.229c-0.073-0.066-0.151-0.127-0.231-0.186c-0.074-0.054-0.151-0.104-0.229-0.149
+	c-0.073-0.042-0.147-0.083-0.225-0.115c-0.136-0.056-0.274-0.109-0.415-0.149c-0.117-0.033-0.238-0.051-0.358-0.068
+	c-0.09-0.013-0.181-0.019-0.271-0.021c-0.154-0.003-0.31-0.006-0.463,0.005c-0.164,0.012-0.328,0.032-0.489,0.064
+	c-0.173,0.034-0.344,0.077-0.511,0.133c-0.18,0.06-0.355,0.133-0.524,0.216c-0.189,0.093-0.37,0.201-0.549,0.313
+	c-0.189,0.119-0.376,0.243-0.555,0.377c-0.313,0.236-0.633,0.465-0.918,0.733c-1.175,1.104-2.329,2.23-3.457,3.38
+	c-0.602,0.613-1.185,1.247-1.73,1.909c-2.168,2.625-4.326,5.258-6.411,7.949c-0.926,1.194-1.759,2.457-2.616,3.699
+	c-0.214,0.311-0.414,0.632-0.599,0.961c-0.321,0.575-0.622,1.161-0.916,1.75c-0.076,0.153-0.136,0.315-0.194,0.476
+	c-0.056,0.154-0.107,0.31-0.148,0.468c-0.038,0.149-0.071,0.301-0.088,0.454c-0.015,0.141-0.017,0.284-0.008,0.425
+	c0.005,0.071,0.026,0.141,0.049,0.208c0.025,0.073,0.058,0.143,0.096,0.21c0.042,0.073,0.091,0.142,0.142,0.208
+	c0.056,0.072,0.113,0.142,0.177,0.206c0.139,0.137,0.281,0.271,0.432,0.395c0.155,0.128,0.315,0.25,0.483,0.36
+	c0.293,0.192,0.596,0.371,0.897,0.547c0.132,0.077,0.271,0.143,0.405,0.213c0.048,0.024-0.095-0.05-0.142-0.076
+	c-0.006-0.002-0.021-0.011-0.016-0.009c0.008,0.002,0.016,0.008,0.023,0.012c0.074,0.039,0.148,0.077,0.223,0.116
+	c1.853,0.968,3.713,1.922,5.557,2.905c1.854,0.988,3.707,1.979,5.538,3.008l4.117,2.313c-1.43,1.082-2.887,2.127-4.287,3.244
+	c-0.535,0.427-1.032,0.9-1.517,1.383c-0.394,0.393-0.765,0.81-1.115,1.241c-0.28,0.345-0.535,0.71-0.773,1.085
+	c-0.187,0.292-0.351,0.601-0.498,0.914c-0.112,0.238-0.202,0.486-0.281,0.737c-0.057,0.176-0.094,0.357-0.126,0.539
+	c-0.019,0.109-0.023,0.222-0.029,0.334c-0.002,0.038,0.005,0.076,0.005,0.114c0.002,0.101-0.003,0.201,0.003,0.301
+	c0.005,0.094,0.016,0.188,0.031,0.279c0.014,0.089,0.033,0.177,0.057,0.264c0.022,0.082,0.051,0.164,0.082,0.244
+	c0.031,0.077,0.066,0.153,0.104,0.227c0.038,0.072,0.077,0.145,0.126,0.21c0.095,0.13,0.191,0.259,0.304,0.373
+	s0.237,0.218,0.367,0.313c0.13,0.096,0.27,0.18,0.412,0.258c0.144,0.078,0.293,0.146,0.445,0.209
+	c0.151,0.063,0.303,0.13,0.463,0.165c0.575,0.127,1.154,0.243,1.738,0.322c0.286,0.039,0.577,0.055,0.864,0.032
+	c0.995-0.078,1.989-0.179,2.975-0.334c1.151-0.181,2.293-0.423,3.432-0.672c1.343-0.294,2.682-0.605,4.012-0.954
+	c0.94-0.247,1.896-0.466,2.796-0.834c0.709-0.289,1.425-0.565,2.128-0.868c0.158-0.067,0.307-0.155,0.455-0.242
+	c0.134-0.078,0.266-0.163,0.392-0.253c0.111-0.079,0.221-0.163,0.32-0.257c0.084-0.079,0.161-0.167,0.229-0.261
+	c0.059-0.079,0.108-0.167,0.149-0.258c0.036-0.08,0.063-0.166,0.082-0.253c0.018-0.079,0.026-0.162,0.026-0.243
+	c0-0.079-0.01-0.158-0.024-0.235c-0.016-0.075-0.038-0.15-0.066-0.223c-0.027-0.073-0.063-0.144-0.102-0.212
+	s-0.082-0.135-0.128-0.198s-0.095-0.126-0.148-0.184c-0.103-0.108-0.208-0.217-0.319-0.315c-0.097-0.086-0.201-0.163-0.306-0.237
+	c-0.103-0.073-0.21-0.141-0.317-0.206c-0.733-0.442-1.463-0.893-2.201-1.328l-3.091-1.825c1.877-1.273,3.771-2.522,5.631-3.822
+	c0.795-0.555,1.577-1.129,2.331-1.738c0.646-0.522,1.261-1.082,1.863-1.652c0.287-0.271,0.542-0.572,0.802-0.869
+	c0.118-0.135,0.227-0.279,0.33-0.426c0.095-0.133,0.191-0.267,0.266-0.413c0.242-0.48,0.48-0.963,0.682-1.461
+	c0.081-0.203,0.115-0.422,0.161-0.636c0.021-0.099,0.029-0.201,0.037-0.302c0.008-0.097,0.011-0.195,0.01-0.292
+	C187.085,24.622,187.079,24.526,187.068,24.432L187.068,24.432z M163.996,11.8c1.048-1.087,2.098-2.172,3.164-3.242
+	c0.194-0.195,0.41-0.37,0.618-0.551c0.072-0.063,0.149-0.123,0.226-0.182c0.059-0.045,0.117-0.092,0.181-0.132
+	c0.045-0.028,0.093-0.052,0.142-0.072c0.052-0.021,0.104-0.042,0.16-0.051c0.058-0.01,0.117-0.009,0.177-0.006
+	c0.03,0.001,0.06,0.009,0.089,0.019c0.03,0.009,0.061,0.023,0.089,0.039c0.03,0.017,0.06,0.037,0.086,0.059
+	c0.031,0.025,0.06,0.053,0.086,0.083c0.03,0.034,0.058,0.07,0.082,0.108c0.028,0.044,0.058,0.089,0.076,0.138
+	c0.051,0.132,0.097,0.267,0.131,0.405c0.049,0.197,0.087,0.397,0.118,0.599c0.076,0.492,0.146,0.985,0.201,1.479
+	c0.072,0.64,0.124,1.282,0.183,1.923l0.318,3.413l-3.803-0.875l-3.549-0.584l-0.859-0.066l-0.279-0.007
+	C162.42,13.464,163.201,12.625,163.996,11.8L163.996,11.8z M161.611,16.546l0.014-0.021l0.02-0.011l0.029-0.003l0.046,0.007
+	l0.133,0.038l0.344,0.132l0.468,0.208c1.208,0.517,2.416,1.034,3.625,1.549c0.801,0.342,1.603,0.681,2.403,1.023l1.583,0.676
+	l0.141,0.063c0.085,1.251,0.189,2.501,0.255,3.753c0.052,0.978,0.073,1.958,0.097,2.937c0.003,0.124-0.007,0.247-0.016,0.37
+	c-0.004,0.069-0.011,0.139-0.021,0.208c-0.011,0.069-0.024,0.138-0.044,0.204c-0.02,0.065-0.042,0.131-0.075,0.191
+	c-0.031,0.059-0.074,0.113-0.117,0.165c-0.021,0.026-0.05,0.049-0.077,0.07c-0.028,0.021-0.059,0.042-0.091,0.06
+	c-0.033,0.018-0.07,0.033-0.106,0.046c-0.04,0.014-0.081,0.026-0.123,0.034c-0.051,0.009-0.103,0.014-0.154,0.016
+	c-0.054,0.001-0.108,0-0.162-0.007c-0.058-0.007-0.114-0.019-0.169-0.033c-0.06-0.015-0.119-0.031-0.175-0.054
+	c-0.123-0.052-0.246-0.107-0.362-0.173c-0.132-0.075-0.259-0.16-0.382-0.25c-0.136-0.1-0.266-0.207-0.392-0.318
+	c-0.138-0.122-0.273-0.246-0.398-0.379c-0.274-0.293-0.545-0.591-0.799-0.902c-0.459-0.561-0.936-1.112-1.339-1.714
+	c-0.556-0.83-1.126-1.65-1.667-2.49c-0.323-0.501-0.654-1-0.923-1.534l-1.221-2.419l-0.263-0.771l-0.06-0.229l-0.036-0.221
+	l-0.003-0.16L161.611,16.546L161.611,16.546z M175.103,37.987c0.329,0.208,0.66,0.413,0.984,0.627
+	c0.419,0.276,0.839,0.55,1.245,0.844c0.292,0.211,0.571,0.439,0.847,0.672c0.122,0.104,0.237,0.216,0.347,0.334
+	c0.089,0.097,0.167,0.203,0.246,0.309c0.005,0.007,0.006,0.016,0.005,0.024c0,0.019-0.002,0.037-0.008,0.055
+	c-0.003,0.012-0.012,0.022-0.02,0.03c-0.012,0.011-0.025,0.021-0.039,0.027c-0.019,0.009-0.039,0.014-0.06,0.018
+	c-0.029,0.006-0.059,0.01-0.088,0.012c-1.604,0.12-3.21,0.23-4.813,0.356l-6.267,0.492l-0.195,0.012l0.09-0.097l0.395-0.349
+	c0.813-0.604,1.599-1.245,2.437-1.813l3.549-2.406C174.205,37.418,174.654,37.702,175.103,37.987L175.103,37.987z M179.93,25.649
+	c-0.017,0.058-0.039,0.115-0.066,0.168c-0.033,0.062-0.071,0.122-0.116,0.175c-0.107,0.127-0.22,0.251-0.342,0.364
+	c-0.262,0.239-0.521,0.484-0.81,0.689c-0.996,0.706-1.981,1.429-2.989,2.118c-0.694,0.475-1.41,0.919-2.118,1.374l-4.117,2.645
+	c-0.583-0.334-1.166-0.669-1.749-1.002l-7.456-4.262c-1.684-1.006-3.378-1.995-5.051-3.019c-0.315-0.193-0.611-0.417-0.912-0.631
+	c-0.096-0.068-0.185-0.146-0.277-0.218c-0.029-0.022-0.061-0.042-0.088-0.066c-0.063-0.058-0.127-0.118-0.186-0.182
+	c-0.036-0.04-0.066-0.083-0.096-0.128c-0.029-0.047-0.058-0.096-0.078-0.148c-0.021-0.053-0.04-0.109-0.048-0.167
+	c-0.009-0.06-0.01-0.121-0.001-0.181c0.009-0.066,0.027-0.13,0.05-0.192c0.024-0.067,0.054-0.133,0.091-0.194
+	c0.074-0.126,0.153-0.251,0.243-0.368c0.104-0.134,0.215-0.262,0.333-0.383c0.963-0.991,1.941-1.968,2.909-2.955l2.61-2.663
+	l0.124,0.43l0.317,0.756l0.021,0.046c0.69,1.196,1.338,2.417,2.07,3.588c0.841,1.346,1.744,2.653,2.646,3.958
+	c0.424,0.611,0.866,1.21,1.332,1.791c0.405,0.505,0.824,1.001,1.279,1.463c0.399,0.405,0.836,0.775,1.28,1.132
+	c0.22,0.176,0.467,0.318,0.709,0.463c0.114,0.07,0.237,0.126,0.36,0.181c0.117,0.051,0.236,0.096,0.357,0.135
+	c0.118,0.038,0.238,0.069,0.36,0.094c0.11,0.023,0.223,0.041,0.335,0.051c0.102,0.009,0.205,0.011,0.308,0.007
+	c0.094-0.002,0.189-0.011,0.283-0.026c0.087-0.013,0.174-0.033,0.258-0.057c0.08-0.022,0.158-0.05,0.235-0.083
+	c0.071-0.029,0.141-0.064,0.209-0.102c0.064-0.036,0.129-0.073,0.188-0.118c0.108-0.082,0.216-0.167,0.314-0.26
+	c0.084-0.08,0.161-0.168,0.231-0.26c0.09-0.117,0.171-0.241,0.246-0.368c0.091-0.154,0.177-0.313,0.252-0.476
+	c0.084-0.182,0.162-0.367,0.225-0.557c0.13-0.396,0.254-0.795,0.353-1.201c0.133-0.548,0.28-1.097,0.339-1.659l0.338-3.251
+	c0.771,0.359,1.56,0.685,2.314,1.078c0.736,0.384,1.441,0.828,2.156,1.252c0.084,0.05,0.162,0.108,0.237,0.17
+	c0.106,0.088,0.208,0.181,0.305,0.28c0.051,0.052,0.096,0.111,0.136,0.171c0.039,0.059,0.075,0.122,0.102,0.187
+	c0.025,0.064,0.042,0.133,0.055,0.201c0.006,0.034,0.004,0.069,0.002,0.104C179.943,25.58,179.94,25.616,179.93,25.649
+	L179.93,25.649z"/>
+</svg>
+</span></div>
+ <div class="hub">
+  <h1>07:30 &rarr; 18:00. <span>Seven moments.</span></h1>
+  <p class="sub">The same data you already land in the Finance Data Hub, used seven ways in one working day. Agents prepare and propose; your controllers approve; your systems of record post.</p>
+  <div class="line"><a class="mo" href="dil-01-close-control-tower.html" style="animation-delay:0.0s"><span class="t">07:30</span><span class="dot"></span>
+ <b>Close Control Tower &middot; WD+2</b><span class="pp">Hammond Mutegi</span><span class="cp"><i>Streamlit in Snowflake</i><i>Dynamic Tables</i><i>Cortex Analyst + Semantic View</i></span><span class="id">DIL-01 &rarr;</span></a><a class="mo" href="dil-02-variance-talk-to-data.html" style="animation-delay:0.08s"><span class="t">08:15</span><span class="dot"></span>
+ <b>Variance &amp; talk to data</b><span class="pp">Hammond Mutegi</span><span class="cp"><i>Snowflake CoWork</i><i>Cortex Agents</i><i>Cortex Analyst + Semantic View</i></span><span class="id">DIL-02 &rarr;</span></a><a class="mo" href="dil-03-vat-duplicate-check.html" style="animation-delay:0.16s"><span class="t">09:30</span><span class="dot"></span>
+ <b>100% VAT &amp; duplicate check</b><span class="pp">David Wood</span><span class="cp"><i>Cortex AI Functions</i><i>AI_EXTRACT</i><i>Horizon masking & row access</i></span><span class="id">DIL-03 &rarr;</span></a><a class="mo" href="dil-04-recon-on-blackline.html" style="animation-delay:0.24s"><span class="t">11:00</span><span class="dot"></span>
+ <b>Reconciliation on top of BlackLine</b><span class="pp">Russell Parry</span><span class="cp"><i>Zero-copy on FDH</i><i>Cortex Analyst + Semantic View</i><i>Cortex AI Functions</i></span><span class="id">DIL-04 &rarr;</span></a><a class="mo" href="dil-07-costing-scenario-twin.html" style="animation-delay:0.32s"><span class="t">12:15</span><span class="dot"></span>
+ <b>Product costing &amp; scenario twin</b><span class="pp">Russell Parry &amp; Rajesh Nair</span><span class="cp"><i>Streamlit in Snowflake</i><i>Cortex Analyst + Semantic View</i><i>Snowflake ML Functions</i></span><span class="id">DIL-07 &rarr;</span></a><a class="mo" href="dil-05-journal-agent-inbox.html" style="animation-delay:0.4s"><span class="t">13:30</span><span class="dot"></span>
+ <b>Journal agent approval inbox</b><span class="pp">Rajesh Nair</span><span class="cp"><i>Cortex Agents</i><i>Cortex Analyst + Semantic View</i><i>Cortex Search</i></span><span class="id">DIL-05 &rarr;</span></a><a class="mo" href="dil-06-o2c-linked-agents.html" style="animation-delay:0.48s"><span class="t">15:00</span><span class="dot"></span>
+ <b>O2C linked agents</b><span class="pp">Mani Sharma</span><span class="cp"><i>Cortex Agents</i><i>Cortex Analyst + Semantic View</i><i>Snowflake ML Functions</i></span><span class="id">DIL-06 &rarr;</span></a></div>
+  <div class="banner"><div class="big">Toward 90% less manual effort &mdash; your target, from 2027<small>What you told us &middot; Tim Green &amp; Pal, 27 Oct 2026</small></div>
+   <div class="cta">Wave 0 Value Sprint &mdash; pick the two screens to make real on your data.</div></div>
+ </div>
+ <div class="foot"><b>Built on:</b><span class="chip">Cortex Agents<span class="ga">GA</span></span><span class="chip">Cortex Analyst + Semantic View<span class="ga">GA</span></span><span class="chip">Horizon<span class="ga">GA</span></span><span class="chip">Streamlit in Snowflake<span class="ga">GA</span></span><span class="honest">Pattern, not product &middot; Illustrative mockup &middot; synthetic data</span></div>
+</div>
+</div>
+<script>
+(function(){
+var q=location.search;if(/[?&]embed=1/.test(q))document.body.classList.add('embed');
+if(/[?&]presenter=1/.test(q))document.body.classList.add('presenter');
+if(!/[?&]dark=1/.test(q))document.body.classList.add('light');
+var cv=document.getElementById('cv');
+function fit(){var s=Math.min(innerWidth/1920,innerHeight/1080);cv.style.transform='scale('+s+')';cv.style.left=((innerWidth-1920*s)/2)+'px';cv.style.top=((innerHeight-1080*s)/2)+'px'}
+addEventListener('resize',fit);fit();
+var tb=document.getElementById('tbtn');if(tb)tb.onclick=function(){document.body.classList.toggle('light')};
+var pb=document.getElementById('pbtn');if(pb)pb.onclick=function(){document.body.classList.toggle('presenter')};
+/* embedded in the deck: forward navigation keys to the parent deck */
+addEventListener('keydown',function(e){
+  var t=e.target;if(t&&(t.tagName==='INPUT'||t.isContentEditable))return;
+  if(e.key==='p'||e.key==='P'){document.body.classList.toggle('presenter');return}
+  if(e.key==='t'||e.key==='T'){document.body.classList.toggle('light');return}
+  if(window.parent!==window&&['ArrowRight','ArrowLeft',' ','PageDown','PageUp'].indexOf(e.key)>=0){e.preventDefault();parent.postMessage({dilKey:e.key},'*')}
+});
+/* sparklines: <svg class="spark" data-v="1,2,3"> */
+document.querySelectorAll('svg.spark').forEach(function(s){var v=s.dataset.v.split(',').map(Number),mx=Math.max.apply(0,v),mn=Math.min.apply(0,v),r=(mx-mn)||1;
+  var pts=v.map(function(x,i){return (i/(v.length-1)*116+2).toFixed(1)+','+(32-(x-mn)/r*28).toFixed(1)}).join(' ');
+  s.setAttribute('viewBox','0 0 120 34');s.innerHTML='<polyline fill="none" stroke="'+(s.dataset.c||'#29B5E8')+'" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" points="'+pts+'"/>'});
+window.DIL={
+  reveal:function(sel,gap,done){var els=document.querySelectorAll(sel),i=0;(function n(){if(i>=els.length){if(done)done();return}els[i++].classList.add('on');setTimeout(n,gap||260)})()},
+  type:function(el,txt,ms,done){el.textContent='';var i=0,step=Math.max(1,Math.ceil(txt.length/((ms||1200)/16)));(function n(){i+=step;el.textContent=txt.slice(0,i);if(i<txt.length)requestAnimationFrame(n);else if(done)done()})()},
+  now:function(){var d=new Date();return ('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2)}
+};
+document.querySelectorAll('[data-sqlbtn]').forEach(function(b){b.onclick=function(){var s=document.getElementById(b.dataset.sqlbtn);s.classList.toggle('open');b.textContent=s.classList.contains('open')?'Hide SQL':'View SQL'}});
+})();
+
+/* ---- demo tour: steps = [{sel, act:'click'|'hover'|'slide'|'wait', to, cap, ms, until}] ---- */
+(function(){
+var cv=document.getElementById('cv'),cur=document.getElementById('cur'),cap=document.getElementById('cap'),running=false;
+function sc(){return cv.getBoundingClientRect().width/1920}
+function moveTo(el,fx,fy){var r=el.getBoundingClientRect(),c=cv.getBoundingClientRect(),s=sc();
+  cur.style.left=((r.left-c.left)/s+(r.width/s)*(fx==null?.5:fx))+'px';cur.style.top=((r.top-c.top)/s+(r.height/s)*(fy==null?.55:fy))+'px'}
+function say(t){if(!t){cap.classList.remove('on');return}cap.textContent=t;cap.classList.add('on')}
+function run(steps){if(running||!steps)return;running=true;var i=0;
+  (function next(){if(i>=steps.length){say('');cur.style.top='1200px';running=false;if(parent!==window)parent.postMessage({dilDone:1},'*');return}
+   var st=steps[i++];if(st.cap!==undefined)say(st.cap);
+   if(st.until){var t0=Date.now();(function w(){if(st.until()||Date.now()-t0>8000)setTimeout(next,st.ms||300);else setTimeout(w,150)})();return}
+   if(st.act==='wait'){setTimeout(next,st.ms||1000);return}
+   var el=typeof st.sel==='function'?st.sel():document.querySelector(st.sel);if(!el){setTimeout(next,50);return}
+   moveTo(el,st.fx,st.fy);el.classList.add('tourhl');
+   setTimeout(function(){
+    if(st.act==='slide'){var a=+el.value,b=+st.to,n=20,k=0;(function sl(){k++;el.value=a+(b-a)*k/n;moveTo(el,(el.value-el.min)/(el.max-el.min),.5);el.dispatchEvent(new Event('input',{bubbles:true}));if(k<n)setTimeout(sl,45);else{el.classList.remove('tourhl');setTimeout(next,st.ms||700)}})();return}
+    if(st.act==='click'){cur.classList.remove('clk');void cur.offsetWidth;cur.classList.add('clk');setTimeout(function(){el.click()},120)}
+    setTimeout(function(){el.classList.remove('tourhl');next()},st.ms||1300)},900)})()}
+window.DIL.play=function(){run(window.TOUR)};
+var db=document.getElementById('demo');if(db)db.onclick=function(){if(running)return;location.search=(location.search.replace(/[?&]autoplay=1/,'')||'?x=1')+'&autoplay=1'};
+addEventListener('keydown',function(e){if((e.key==='d'||e.key==='D')&&db)db.click()});
+addEventListener('message',function(e){if(e.data&&e.data.dilPlay)window.DIL.play()});
+addEventListener('load',function(){if(/[?&]autoplay=1/.test(location.search))setTimeout(window.DIL.play,900)});
+})();
+</script></body></html>
