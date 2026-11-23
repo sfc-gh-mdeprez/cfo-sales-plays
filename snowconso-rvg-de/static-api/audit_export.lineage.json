@@ -1,0 +1,1 @@
+{"id":"mwt7szrxwhpvmq","route":"/api/audit/export","method":"GET","params":{},"startedAt":"2026-11-23T12:01:14.013Z","ms":1,"queries":[],"kind":"app-computed","database":"SNOWCONSO_RVG_DE","warehouse":"COMPUTE_WH","tables":[],"semanticViews":[]}

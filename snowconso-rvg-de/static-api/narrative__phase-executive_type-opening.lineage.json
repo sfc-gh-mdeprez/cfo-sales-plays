@@ -1,0 +1,1 @@
+{"id":"mwt7tv7j3sufb7","route":"/api/narrative","method":"GET","params":{"phase":"executive","type":"opening"},"startedAt":"2026-11-23T12:01:54.751Z","ms":0,"queries":[],"kind":"app-computed","database":"SNOWCONSO_RVG_DE","warehouse":"COMPUTE_WH","tables":[],"semanticViews":[]}
